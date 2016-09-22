@@ -27,8 +27,8 @@ function love.load()
 	lg.setBackgroundColor(39,40,34) --nice for hud
 	--lg.setBackgroundColor(255,255,255) --for images
 
-	Screen.w = love.window.getWidth()
-	Screen.h = love.window.getHeight()
+	Screen.w = lg.getWidth()
+	Screen.h = lg.getHeight()
 
 
 	--camera = Camera(Screen.w/2,Screen.h/2, 1, 0)
@@ -48,9 +48,9 @@ end
 
 function love.update( dt )
 	--require("lovebird").update()
-	
-	Screen.w = love.window.getWidth()
-	Screen.h = love.window.getHeight()
+
+	Screen.w = lg.getWidth()
+	Screen.h = lg.getHeight()
 	--Timer.update(dt)
 	--for k,v in pairs(flacsruns) do
 	--	v:update(dt)
